@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/CNN_example.iml" filepath="$PROJECT_DIR$/.idea/CNN_example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Deeplearning_exercise.iml" filepath="$PROJECT_DIR$/.idea/Deeplearning_exercise.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/RNN_example.iml" filepath="$PROJECT_DIR$/.idea/RNN_example.iml" />
     </modules>
   </component>

@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="e2d99278-8d26-48fa-994c-5703b9f0adb2" name="svg" url="http://192.168.1.2">
-        <fileTransfer host="192.168.1.2" port="22" rootFolder="/home/kairos03/Documents/DL/CNN_example" accessType="SFTP">
+        <fileTransfer host="192.168.1.2" port="22" rootFolder="/home/kairos03" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>

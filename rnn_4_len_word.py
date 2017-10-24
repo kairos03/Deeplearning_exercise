@@ -1,3 +1,7 @@
+# Copyright 2017 kairos03. All Right Reserved.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# ===============================================================
 import tensorflow as tf
 import numpy as np
 import random
@@ -13,8 +17,8 @@ def next_batch(batch_size):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     alpha_list = [alphabet[n] for n in range(len(alphabet))]
     num_dict = {n: i for i, n in enumerate(alpha_list)}
-    seq_data = ['word', 'wood', 'love', 'life', 'deep', 'sexy', 'mood', 'dive', 'cold', 'cool', 'kiss', 'ship',
-                'room', 'mart']
+    seq_data = ['word', 'wood', 'love', 'life', 'deep', 'sexy', 'mood',
+                'dive', 'cold', 'cool', 'kiss', 'ship', 'room', 'mart']
 
     bx = []
     by = []
@@ -77,6 +81,7 @@ def train():
     # placeholder
     with tf.name_scope('input'):
         x = tf.placeholder(tf.float32, [None, n_step, n_input])
+    with tf.name_scope('output'):
         y_ = tf.placeholder(tf.int32, [None])
 
     # var
@@ -88,9 +93,8 @@ def train():
 
     # cell
     def rnn_cell(n_hidden, cell_type=tf.nn.rnn_cell.BasicLSTMCell, keep_prob=1, name='rnn_cell'):
-        with tf.name_scope(name):
-            cell = cell_type(n_hidden)
-            cell = tf.nn.rnn_cell.DropoutWrapper(cell, output_keep_prob=keep_prob)
+        cell = cell_type(n_hidden)
+        cell = tf.nn.rnn_cell.DropoutWrapper(cell, output_keep_prob=keep_prob)
         return cell
 
     with tf.name_scope('multi_cell'):
@@ -107,12 +111,14 @@ def train():
         variable_summery('act', model)
 
     with tf.name_scope('matrices'):
-
-        xent = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=model, labels=y_), name='xent')
-        optimizer = tf.train.AdamOptimizer(learning_rate).minimize(xent)
+        with tf.name_scope('xent'):
+            xent = tf.reduce_mean(tf.nn.sparse_softmax_cross_entropy_with_logits(logits=model, labels=y_), name='xent')
+        with tf.name_scope('optimizer'):
+            optimizer = tf.train.AdamOptimizer(learning_rate).minimize(xent)
         # accuracy
-        correct = tf.equal(tf.cast(tf.argmax(model, 1), tf.int32), y_)
-        accuracy = tf.reduce_mean(tf.cast(correct, tf.float32))
+        with tf.name_scope('accuracy'):
+            correct = tf.equal(tf.cast(tf.argmax(model, 1), tf.int32), y_)
+            accuracy = tf.reduce_mean(tf.cast(correct, tf.float32))
         tf.summary.scalar('xent', xent)
         tf.summary.scalar('accuracy', accuracy)
 
