@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="894fcab0-1bb4-4aee-b2d6-4e662b52d0ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rnn_4_len_word/lr_0.01_hd_128_ep_1000/test/events.out.tfevents.1508512879.kairos-laptop" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rnn_4_len_word/lr_0.01_hd_128_ep_1000/train/events.out.tfevents.1508512878.kairos-laptop" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rnn_4_len_word/lr_0.01_hd_128_ep_30/test/events.out.tfevents.1508512750.kairos-laptop" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rnn_4_len_word/lr_0.01_hd_128_ep_30/train/events.out.tfevents.1508512600.kairos-laptop" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rnn_4_len_word/lr_0.01_hd_128_ep_30/train/events.out.tfevents.1508512658.kairos-laptop" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rnn_4_len_word/lr_0.01_hd_128_ep_30/train/events.out.tfevents.1508512748.kairos-laptop" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Deeplearning_exercise.iml" afterPath="$PROJECT_DIR$/.idea/Deeplearning_exercise.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/preferred-vcs.xml" afterPath="$PROJECT_DIR$/.idea/preferred-vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webServers.xml" afterPath="$PROJECT_DIR$/.idea/webServers.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rnn_4_len_word.py" afterPath="$PROJECT_DIR$/rnn_4_len_word.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -495,6 +487,14 @@
       <option name="presentableId" value="Default" />
       <updated>1505747683437</updated>
     </task>
+    <task id="LOCAL-00001" summary="add cat dog prediction">
+      <created>1508849745554</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1508849745554</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -537,6 +537,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add cat dog prediction" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cat dog prediction" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
