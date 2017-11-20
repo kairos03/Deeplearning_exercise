@@ -1,25 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="894fcab0-1bb4-4aee-b2d6-4e662b52d0ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/__init__.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cat_dog/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cat_dog/cat_dog_classification.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cat_dog/input_data.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/4letter/data.txt" afterPath="$PROJECT_DIR$/RNN/4letter/data.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Basic_DNN_with_pattern.py" afterPath="$PROJECT_DIR$/DNN/Basic_DNN_with_pattern.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DNN.py" afterPath="$PROJECT_DIR$/DNN/DNN.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/RNN.py" afterPath="$PROJECT_DIR$/RNN/RNN.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/board_test.py" afterPath="$PROJECT_DIR$/Tensroboard/board_test.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/board_test_origin.py" afterPath="$PROJECT_DIR$/Tensroboard/board_test_origin.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cnn2.py" afterPath="$PROJECT_DIR$/CNN/cnn2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/example.py" afterPath="$PROJECT_DIR$/CNN/example.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hands-on-tensorboard.py" afterPath="$PROJECT_DIR$/Tensroboard/hands-on-tensorboard.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rnn_4_len_word.py" afterPath="$PROJECT_DIR$/RNN/rnn_4_len_word.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rnn_mnist.py" afterPath="$PROJECT_DIR$/RNN/rnn_mnist.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rnn_test.py" afterPath="$PROJECT_DIR$/RNN/rnn_test.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/underfit-casetest.py" afterPath="$PROJECT_DIR$/CNN/underfit-casetest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+    <list default="true" id="894fcab0-1bb4-4aee-b2d6-4e662b52d0ae" name="Default" comment="add cat_dog classification">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/cat_dog/log/lr_0.001_ep_1001/train/events.out.tfevents.1508774002.kairos-laptop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/cat_dog/log/lr_0.001_ep_1001/train/events.out.tfevents.1508774027.kairos-laptop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/cat_dog/log/lr_0.001_ep_1001/train/events.out.tfevents.1508847290.kairos-laptop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/cat_dog/log/lr_0.001_ep_1001/train/events.out.tfevents.1508849466.kairos-laptop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/cat_dog/log/lr_0.001_ep_1001/train/events.out.tfevents.1508849509.kairos-laptop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/cat_dog/log/lr_0.001_ep_1001/train/events.out.tfevents.1508849574.kairos-laptop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/cat_dog/log/lr_0.001_ep_1001/train/events.out.tfevents.1508849609.kairos-laptop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/cat_dog/log/lr_0.001_ep_1001/train/events.out.tfevents.1508849677.kairos-laptop" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples/00000.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples/00099.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/000.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/099.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/199.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/299.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/399.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/499.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/599.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/699.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/799.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/899.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/samples2/999.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/HeadOfAManVanGogh.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/La_Chambre_%C3%A0_Arles%2C_by_Vincent_van_Gogh%2C_from_C2RMF.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Peasant_Woman_Cooking_by_a_Fireplace.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Selfportraitbandagedear.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Akt_eines_sitzenden_kleinen_M%C3%A4dchens.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_B%C3%A4ume_und_Unterholz.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Badeboot_an_der_Seine_bei_Asni%C3%A8res.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Bauernhaus_zwischen_B%C3%A4umen.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Bildnis_eines_Patienten_im_Hospital_Saint-Paul.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Bl%C3%BChender_Mandelbaumzweig_in_einem_Glas.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Blick_auf_Amsterdam_vom_Hauptbahnhof.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Blick_auf_Montmartre_mit_Steinbruch_und_M%C3%BChlen.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Das_gelbe_Haus_%28Vincents_Haus%29.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Der_S%C3%A4mann1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Die_Br%C3%BCcke_von_Langlois_in_Arles1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Die_Kirche_von_Nuenen_mit_Kirchg%C3%A4ngern.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Die_Seine_mit_der_Pont_de_la_Grande_Jatte.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Frau%2C_neben_einer_Wiege_sitzend.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Gasse_in_Saintes-Maries.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Kopf_einer_jungen_B%C3%A4uerin_mit_dunkler_Haube.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Kopf_eines_jungen_Bauern_mit_M%C3%BCtze.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Kopf_eines_jungen_Bauern_mit_M%C3%BCtze2.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Landschaft_mit_Kirche_und_H%C3%A4usern.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Le_Moulin_de_la_Galette3.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Selbstbildnis_mit_Strohhut1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Selbstbildnis_mit_Strohhut_und_Pfeife.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Stillleben_mit_B%C3%BCcklingen_und_Knoblauchzwiebeln.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Stillleben_mit_vier_Kr%C3%BCgen%2C_Flasche_und_wei%C3%9Fen_Napf.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Unterholz.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Vase_mit_Nelken1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Weber_am_Webstuhl_-_%28Profil_nach_rechts%292.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Weg_im_Park_Voyer_d%27Argenson_in_Asni%C3%A8res.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Weg_mit_Eingang_zu_einem_Aussichtspunkt.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Weizenfeld_hinter_dem_Hospital_Saint-Paul.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Zimmermannswerstatt.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Zwei_abgeschnittene_Sonnenblumen.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Vincent_Van_Gogh_0021.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Vincent_van_Gogh%2C_Portrait_of_Theo_van_Gogh_%281887%29_-_02.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Vincent_van_Gogh_-_Boerderij_in_de_Provence.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Vincent_van_Gogh_-_Les_banques_de_la_Seine_avec_Pont_de_Clichy_au_printemps_%281887%29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Vincent_van_Gogh_-_Paysanne_au_bassin_dans_un_jardin_%281885%29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Vincent_van_Gogh_-_The_Rocks_-_Google_Art_Project.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Vincent_van_Gogh_-_Two_women_in_a_wood_%281882%29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data_set/gogh/Vincent_van_Gogh_-_View_from_the_window_of_Vincent%27s_studio_in_winter_I_%281883%29.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/vgdb_2016.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mnist/data/t10k-images-idx3-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mnist/data/t10k-labels-idx1-ubyte.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mnist/data/train-labels-idx1-ubyte.gz" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GAN/gogh_test/Van_Gogh_-_Iris.jpeg" afterPath="$PROJECT_DIR$/data_set/gogh_test/Van_Gogh_-_Iris.jpeg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/GAN/gogh_test/Van_Gogh_-_Iris2.jpeg" afterPath="$PROJECT_DIR$/data_set/gogh_test/Van_Gogh_-_Iris2.jpeg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RNN/4letter/data.txt" afterPath="$PROJECT_DIR$/data_set/4letter/data.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/mnist/data/train-images-idx3-ubyte.gz" afterPath="$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Selbstbildnis_mit_dunklem_Filzhut.jpeg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
@@ -57,7 +113,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GAN_tutorial.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GAN_tutorial.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GAN/GAN_tutorial.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="309">
@@ -65,6 +121,16 @@
               <folding>
                 <element signature="e#129#152#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -142,7 +208,6 @@
         <option value="$PROJECT_DIR$/cat_dog/cat_dog_classification.py" />
         <option value="$PROJECT_DIR$/cat_dog/input_data.py" />
         <option value="/media/kairos/Data/Dev/deepleaning/Deeplearning_exercise/cat_dog/input_data.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/GAN_tutorial.py" />
         <option value="$PROJECT_DIR$/GAN_tutorial2.py" />
         <option value="$PROJECT_DIR$/GAN/GAN_tutorial.py" />
@@ -153,6 +218,7 @@
         <option value="$PROJECT_DIR$/GAN/GAN_tutorial2.py" />
         <option value="$PROJECT_DIR$/GAN/image_data.py" />
         <option value="$PROJECT_DIR$/GAN/GAN_imitate.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -213,18 +279,38 @@
             <path>
               <item name="Deeplearning_exercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="Deeplearning_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="CNN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deeplearning_exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deeplearning_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="CNN" type="462c0819:PsiDirectoryNode" />
+              <item name="cat_dog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deeplearning_exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deeplearning_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="data_set" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deeplearning_exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deeplearning_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="DNN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Deeplearning_exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Deeplearning_exercise" type="462c0819:PsiDirectoryNode" />
               <item name="GAN" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Deeplearning_exercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="Deeplearning_exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="mnist" type="462c0819:PsiDirectoryNode" />
+              <item name="RNN" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Deeplearning_exercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="Deeplearning_exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="mnist" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="Tensroboard" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,15 +334,15 @@
     <option name="myPyQtBackend" value="PyQt5" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/GAN/log" />
+      <recent name="$PROJECT_DIR$/data_set" />
+      <recent name="$PROJECT_DIR$/RNN/log" />
+      <recent name="$PROJECT_DIR$/data_set/cat_dog" />
+      <recent name="$PROJECT_DIR$/CNN" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/GAN/gogh_test" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/CNN" />
-      <recent name="$PROJECT_DIR$/RNN" />
-      <recent name="$PROJECT_DIR$/Tensroboard" />
-      <recent name="$PROJECT_DIR$/GAN" />
-      <recent name="$PROJECT_DIR$/DNN" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -576,21 +662,36 @@
       <option name="project" value="LOCAL" />
       <updated>1511165169146</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="change directory structure">
+      <created>1511165202718</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1511165202718</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add cat_dog classification">
+      <created>1511165286917</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1511165286917</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1517" y="-4" width="1617" height="1062" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1822817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5026969" sideWeight="0.5022307" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19783784" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45723173" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46810812" sideWeight="0.49776927" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44756758" sideWeight="0.49776927" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1822817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32950923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20108108" sideWeight="0.49776927" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -610,7 +711,6 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19783784" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -627,7 +727,9 @@
     <MESSAGE value="add data file to .gitignore" />
     <MESSAGE value="copy example" />
     <MESSAGE value="update GAN" />
-    <option name="LAST_COMMIT_MESSAGE" value="update GAN" />
+    <MESSAGE value="change directory structure" />
+    <MESSAGE value="add cat_dog classification" />
+    <option name="LAST_COMMIT_MESSAGE" value="add cat_dog classification" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -736,13 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///media/kairos/Data/Dev/deepleaning/Deeplearning_exercise/cat_dog/input_data.py" />
     <entry file="file://$PROJECT_DIR$/CNN/cat_dog/input_data.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -833,7 +928,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GAN/gogh/Van_Gogh_-_Unterholz.jpeg">
+    <entry file="file://$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Unterholz.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -873,22 +968,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GAN/gogh/Crustacean%2C_lying_on_his_back_by_Vincent_van_Gogh_%28Van_Gogh_museum_photogtaph%29.jpg">
+    <entry file="file://$PROJECT_DIR$/data_set/gogh/Crustacean%2C_lying_on_his_back_by_Vincent_van_Gogh_%28Van_Gogh_museum_photogtaph%29.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GAN/gogh/Vincent_van_Gogh_-_Sorrow.jpg">
+    <entry file="file://$PROJECT_DIR$/data_set/gogh/Vincent_van_Gogh_-_Sorrow.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GAN/gogh/Van_Gogh_-_Viadukt_in_Paris.jpeg">
+    <entry file="file://$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Viadukt_in_Paris.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GAN/gogh/Van_Gogh_-_Iris.jpeg">
+    <entry file="file://$PROJECT_DIR$/data_set/gogh/Van_Gogh_-_Iris.jpeg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -941,6 +1036,14 @@
           <folding>
             <element signature="e#129#152#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

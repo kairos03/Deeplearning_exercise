@@ -1,6 +1,6 @@
 # except data files
-data/
-mnist/
+data_set/
+log/
 
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
