@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="894fcab0-1bb4-4aee-b2d6-4e662b52d0ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/gogh_test/Van_Gogh_-_Iris.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/gogh_test/Van_Gogh_-_Iris2.jpeg" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CNN/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/GAN_tutorial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/GAN_tutorial2.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/download_van_gogh_paints.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/GAN/image_data.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cat_dog/__init__.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cat_dog/cat_dog_classification.py" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/cat_dog/input_data.py" afterPath="" />
@@ -28,7 +21,6 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/underfit-casetest.py" afterPath="$PROJECT_DIR$/CNN/underfit-casetest.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GAN/GAN_imitate.py" afterPath="$PROJECT_DIR$/GAN/GAN_imitate.py" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -577,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510680415926</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update GAN">
+      <created>1511165169146</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1511165169146</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -627,7 +626,8 @@
     <MESSAGE value="add cat dog prediction" />
     <MESSAGE value="add data file to .gitignore" />
     <MESSAGE value="copy example" />
-    <option name="LAST_COMMIT_MESSAGE" value="copy example" />
+    <MESSAGE value="update GAN" />
+    <option name="LAST_COMMIT_MESSAGE" value="update GAN" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
