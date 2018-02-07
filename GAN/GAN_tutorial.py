@@ -1,17 +1,21 @@
 # 2016년에 가장 관심을 많이 받았던 비감독(Unsupervised) 학습 방법인
-# Generative Adversarial Network(GAN)을 구현해봅니다.
+# Generative Adversarial Network(4.GAN)을 구현해봅니다.
 # https://arxiv.org/abs/1406.2661
+import matplotlib
+matplotlib.use('Agg')
+
 import tensorflow as tf
 import matplotlib.pyplot as plt
 import numpy as np
 
 from tensorflow.examples.tutorials.mnist import input_data
+
 mnist = input_data.read_data_sets("../mnist/data/", one_hot=True)
 
 #########
 # 옵션 설정
 ######
-total_epoch = 1000
+total_epoch = 300
 batch_size = 100
 learning_rate = 0.0002
 # 신경망 레이어 구성 옵션
@@ -22,7 +26,7 @@ n_noise = 128  # 생성기의 입력값으로 사용할 노이즈의 크기
 #########
 # 신경망 모델 구성
 ######
-# GAN 도 Unsupervised 학습이므로 Autoencoder 처럼 Y 를 사용하지 않습니다.
+# 4.GAN 도 Unsupervised 학습이므로 Autoencoder 처럼 Y 를 사용하지 않습니다.
 X = tf.placeholder(tf.float32, [None, n_input])
 # 노이즈 Z를 입력값으로 사용합니다.
 Z = tf.placeholder(tf.float32, [None, n_noise])
@@ -73,7 +77,7 @@ D_gene = discriminator(G)
 # 진짜 이미지를 이용해 판별한 값을 구합니다.
 D_real = discriminator(X)
 
-# 논문에 따르면, GAN 모델의 최적화는 loss_G 와 loss_D 를 최대화 하는 것 입니다.
+# 논문에 따르면, 4.GAN 모델의 최적화는 loss_G 와 loss_D 를 최대화 하는 것 입니다.
 # 다만 loss_D와 loss_G는 서로 연관관계가 있기 때문에 두 개의 손실값이 항상 같이 증가하는 경향을 보이지는 않을 것 입니다.
 # loss_D가 증가하려면 loss_G는 하락해야하고, loss_G가 증가하려면 loss_D는 하락해야하는 경쟁관계에 있기 때문입니다.
 # 논문의 수식에 따른 다음 로직을 보면 loss_D 를 최대화하기 위해서는 D_gene 값을 최소화하게 됩니다.
@@ -93,7 +97,7 @@ loss_G = tf.reduce_mean(tf.log(D_gene))
 D_var_list = [D_W1, D_b1, D_W2, D_b2]
 G_var_list = [G_W1, G_b1, G_W2, G_b2]
 
-# GAN 논문의 수식에 따르면 loss 를 극대화 해야하지만, minimize 하는 최적화 함수를 사용하기 때문에
+# 4.GAN 논문의 수식에 따르면 loss 를 극대화 해야하지만, minimize 하는 최적화 함수를 사용하기 때문에
 # 최적화 하려는 loss_D 와 loss_G 에 음수 부호를 붙여줍니다.
 train_D = tf.train.AdamOptimizer(learning_rate).minimize(-loss_D,
                                                          var_list=D_var_list)
@@ -127,7 +131,7 @@ for epoch in range(total_epoch):
     #########
     # 학습이 되어가는 모습을 보기 위해 주기적으로 이미지를 생성하여 저장
     ######
-    if epoch == 0 or (epoch + 1) % 100 == 0:
+    if epoch == 0 or (epoch + 1) % 30 == 0:
         sample_size = 10
         noise = get_noise(sample_size, n_noise)
         samples = sess.run(G, feed_dict={Z: noise})

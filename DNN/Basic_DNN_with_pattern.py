@@ -13,7 +13,7 @@
 # limitations under the License.
 # ==========================================================================
 
-"""Build Basic 4-layer DNN with tensorflow code pattern"""
+"""Build Basic 4-layer 1.DNN with tensorflow code pattern"""
 
 from __future__ import absolute_import
 from __future__ import division

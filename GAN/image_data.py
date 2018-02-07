@@ -1,6 +1,7 @@
 import os
 
 import tensorflow as tf
+import numpy as np
 
 
 def read_data_sets(data_path):
@@ -18,8 +19,7 @@ def read_data_sets(data_path):
     filename, content = reader.read(image_queue)
 
     # decode, resize, standardization
-    image = tf.image.decode_jpeg(content, channels=1)
-    image = tf.image.resize_image_with_crop_or_pad(image, 100, 100)
+    image = tf.image.decode_jpeg(content, channels=3)
     # image = tf.image.per_image_standardization(image)
 
     with tf.Session() as sess:

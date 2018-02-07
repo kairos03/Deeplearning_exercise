@@ -14,7 +14,7 @@ mnist = input_data.read_data_sets("../mnist/data/", one_hot=True)
 #########
 # 옵션 설정
 ######
-total_epoch = 100
+total_epoch = 500
 batch_size = 100
 n_hidden = 256
 n_input = 28 * 28
@@ -70,7 +70,7 @@ G = generator(Z, Y)
 D_real = discriminator(X, Y)
 D_gene = discriminator(G, Y, True)
 
-# 손실함수는 다음을 참고하여 GAN 논문에 나온 방식과는 약간 다르게 작성하였습니다.
+# 손실함수는 다음을 참고하여 4.GAN 논문에 나온 방식과는 약간 다르게 작성하였습니다.
 # http://bamos.github.io/2016/08/09/deep-completion/
 # 진짜 이미지를 판별하는 D_real 값은 1에 가깝도록,
 # 가짜 이미지를 판별하는 D_gene 값은 0에 가깝도록 하는 손실 함수입니다.
@@ -125,7 +125,7 @@ for epoch in range(total_epoch):
     #########
     # 학습이 되어가는 모습을 보기 위해 주기적으로 레이블에 따른 이미지를 생성하여 저장
     ######
-    if epoch == 0 or (epoch + 1) % 10 == 0:
+    if epoch == 0 or (epoch + 1) % 100 == 0:
         sample_size = 10
         noise = get_noise(sample_size, n_noise)
         samples = sess.run(G,

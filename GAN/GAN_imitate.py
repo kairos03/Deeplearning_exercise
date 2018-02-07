@@ -13,7 +13,7 @@ import image_data
 
 # from tensorflow.examples.tutorials.mnist import input_data
 # mnist = input_data.read_data_sets('../mnist/data', one_hot=True)
-gogh = image_data.read_data_sets(data_path='./gogh_test')
+gogh = image_data.read_data_sets(data_path='../0.data_set/gogh_resize')
 
 # hyperparameter
 total_epoch = 5000
@@ -23,7 +23,7 @@ g_learning_rate = 1e-3
 
 # model var
 n_hidden = 4096
-n_input = 100 * 100 * 1
+n_input = 128 * 128 * 3
 n_noise = 4096
 
 # placeholder
@@ -108,13 +108,13 @@ with tf.Session() as sess:
     total_batch = int(gogh.num_images/batch_size)
     loss_val_D, loss_val_G = 0, 0
 
-    os.mkdir('samples2/{}'.format(name))
+    os.mkdir('samples3/{}'.format(name))
 
     for epoch in range(total_epoch):
         # b_xs, noise = None, None
         # or i in range(total_batch):
         # b_xs, _ = mnist.train.next_batch(1)
-        # b_xs = gogh.next_batch(batch_size)
+        # b_xs = gogh_origin.next_batch(batch_size)
         b_xs = gogh.next()
         b_xs = np.reshape(b_xs, [-1, n_input])
         noise = get_noise(batch_size, n_noise)
@@ -132,7 +132,7 @@ with tf.Session() as sess:
             summary = sess.run(merged, feed_dict={X: b_xs, Z: noise})
             train_writer.add_summary(summary, epoch)
 
-        if epoch == 0 or (epoch + 1) % 200 == 0:
+        if epoch == 0 or (epoch + 1) % 50 == 0:
             # sample_size = 10
             sample_size = 2
             noise = get_noise(sample_size, n_noise)
@@ -144,9 +144,9 @@ with tf.Session() as sess:
                 ax[0][i].set_axis_off()
                 ax[1][i].set_axis_off()
 
-                ax[0][i].imshow(np.reshape(gogh.images[i], (100, 100)))
-                ax[1][i].imshow(np.reshape(samples[i], (100, 100)))
-            plt.savefig('samples2/{}/{}.png'.format(name, str(epoch).zfill(3)), bbox_inches='tight')
+                ax[0][i].imshow(np.reshape(gogh.images[i], (128, 128, 3)))
+                ax[1][i].imshow(np.reshape(samples[i], (128, 128, 3)))
+            plt.savefig('samples3/{}/{}.png'.format(name, str(epoch).zfill(3)), bbox_inches='tight')
             plt.close(fig)
 
     print('최적화 완료!')

@@ -11,7 +11,7 @@ learning_rate = 0.001
 total_epoch = 30
 batch_size = 128
 
-# RNN 은 순서가 있는 자료를 다루므로,
+# 3.RNN 은 순서가 있는 자료를 다루므로,
 # 한 번에 입력받는 갯수와, 총 몇 단계로 이루어져있는 데이터를 받을지를 설정해야합니다.
 # 이를 위해 가로 픽셀수를 n_input 으로, 세로 픽셀수를 입력 단계인 n_step 으로 설정하였습니다.
 n_input = 28
@@ -28,19 +28,19 @@ Y = tf.placeholder(tf.float32, [None, n_class])
 W = tf.Variable(tf.random_normal([n_hidden, n_class]))
 b = tf.Variable(tf.random_normal([n_class]))
 
-# RNN 에 학습에 사용할 셀을 생성합니다
+# 3.RNN 에 학습에 사용할 셀을 생성합니다
 # 다음 함수들을 사용하면 다른 구조의 셀로 간단하게 변경할 수 있습니다
 # BasicRNNCell,BasicLSTMCell,GRUCell
 cell = tf.nn.rnn_cell.BasicRNNCell(n_hidden)
 
-# RNN 신경망을 생성합니다
+# 3.RNN 신경망을 생성합니다
 # 원래는 다음과 같은 과정을 거쳐야 하지만
 # states = tf.zeros(batch_size)
 # for i in range(n_step):
 #     outputs, states = cell(X[[:, i]], states)
 # ...
 # 다음처럼 tf.nn.dynamic_rnn 함수를 사용하면
-# CNN 의 tf.nn.conv2d 함수처럼 간단하게 RNN 신경망을 만들어줍니다.
+# 2.CNN 의 tf.nn.conv2d 함수처럼 간단하게 3.RNN 신경망을 만들어줍니다.
 # 겁나 매직!!
 outputs, states = tf.nn.dynamic_rnn(cell, X, dtype=tf.float32)
 
@@ -70,7 +70,7 @@ for epoch in range(total_epoch):
 
     for i in range(total_batch):
         batch_xs, batch_ys = mnist.train.next_batch(batch_size)
-        # X 데이터를 RNN 입력 데이터에 맞게 [batch_size, n_step, n_input] 형태로 변환합니다.
+        # X 데이터를 3.RNN 입력 데이터에 맞게 [batch_size, n_step, n_input] 형태로 변환합니다.
         batch_xs = batch_xs.reshape((batch_size, n_step, n_input))
 
         _, cost_val = sess.run([optimizer, cost],

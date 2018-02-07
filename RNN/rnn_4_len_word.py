@@ -77,7 +77,7 @@ def train():
             tf.summary.scalar('stddev', stddev)
             tf.summary.histogram('histogram', var)
 
-    # RNN model
+    # 3.RNN model
     # placeholder
     with tf.name_scope('input'):
         x = tf.placeholder(tf.float32, [None, n_step, n_input])
